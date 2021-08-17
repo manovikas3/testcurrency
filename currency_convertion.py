@@ -24,5 +24,5 @@ print(number)
 #currency = {currency}
 #number = {number}
 y = float(g[currency])
-z = number * y
-# print(f"\n Currency conversion of INR {number} to {currency} is {z}  ")
+z = int(number) * y
+print(f"\n Currency conversion of INR {number} to {currency} is {z}  ")
