@@ -1,3 +1,4 @@
+import os
 file = 'currency.txt'
 a = open(file)
 b= a.readlines()
