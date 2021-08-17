@@ -15,9 +15,11 @@ for c in b:
 print('give from the list of available currencies:\n')
 [print(h) for h in g.keys()]
 # currency = input("\n enter a currency:")
-number = int(input("\n enter the INR amount: "))
+# number = int(input("\n enter the INR amount: "))
+number = os.getenv("number")
 currency = os.getenv("input_currency")
 print(currency)
+print(number)
 #currency = {currency}
 #number = {number}
 y = float(g[currency])
