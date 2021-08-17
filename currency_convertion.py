@@ -14,10 +14,12 @@ for c in b:
 #print(g)
 print('give from the list of available currencies:\n')
 [print(h) for h in g.keys()]
-currency = input("\n enter a currency:")
+# currency = input("\n enter a currency:")
 number = int(input("\n enter the INR amount: "))
+currency = os.getenv("input_currency")
+print(currency)
 #currency = {currency}
 #number = {number}
 y = float(g[currency])
 z = number * y
-print(f"\n Currency conversion of INR {number} to {currency} is {z}  ")
+# print(f"\n Currency conversion of INR {number} to {currency} is {z}  ")
